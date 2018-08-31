@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/card_side_margin"
+    android:layout_marginRight="@dimen/card_side_margin"
+    android:layout_marginTop="@dimen/card_top_margin"
+  android:layout_marginBottom="@dimen/card_margin"
+    android:background="@android:drawable/list_selector_background"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="0dp"
+    app:cardPreventCornerOverlap="false">
+
+    <TextView
+      style="@style/Base.TextAppearance.AppCompat.Widget.PopupMenu.Small"
+        android:id="@+id/sectionHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/header_tille_read_by"
+        android:padding="10dp"
+        android:textSize="16sp"
+      android:textColor="@color/read_by"
+      />
+    <ImageView
+      android:id="@+id/img_header_msg_status"
+      android:layout_width="@dimen/dim_25"
+      android:layout_height="@dimen/dim_25"
+      android:src="@drawable/msg_read"
+      android:layout_gravity="right"
+      android:paddingRight="@dimen/dim_5"
+      android:layout_marginTop="@dimen/dim_5"
+      />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="bottom"
+        android:background="#22424242"/>
+
+</android.support.v7.widget.CardView>
